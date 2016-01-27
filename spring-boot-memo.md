@@ -4,31 +4,28 @@
   - xxx-api only ?
   - xxx-api + xxx-domain
   - TERASOLUNAはマルチ構成推奨(レイヤ間の依存性の逆転を防ぐ目的)だが・・・
-  - xxx-envは不要そう(.yml + @Profile)
+  - xxx-envは不要そう(.yml + optionalで@Profile)
 
 
 # REST API開発関連(@RestController)
 TERASOLUNAガイドラインのTODO部分
 
 * リソースの条件付き更新の制御
-    ※ TERASOLUNAガイドラインはベストエフォート
 * リソースの条件付き取得の制御
-    ※ TERASOLUNAガイドラインはベストエフォート
 * リソースのキャッシュ制御
-    ※ TERASOLUNAガイドラインはベストエフォート
 * バージョニング
-    ※ TERASOLUNAガイドラインはベストエフォート
 
 
 # REST API開発関連(Security)
 TERASOLUNAガイドラインのTODO部分
 
 * 認証・認可
-    ※ OAuth2(Spring Security OAuth 2)はTERASOLUNAで執筆する?
+  - OAuth2(Spring Security OAuth 2)はTERASOLUNAで執筆する?
+  - etc ..
 
 
 # REST API開発関連(Spring Boot)
-現時点のTERASOLUNAのガイドでカバーできない部分
+現時点のTERASOLUNAではSpring Bootはサポートしてない
 
 * Servlet Containerに通知されたエラーのハンドリング方法
   - http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-error-handling
@@ -55,7 +52,7 @@ TERASOLUNAガイドラインのTODO部分
   - http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-devtools
 
 * STS?
-  - なにかれば・・
+  - pluginとかの使い方とか（なにかれば・・）
 
 * Lombok
   - TERASOLUNAのAppendixでも触れてはいる。
@@ -63,6 +60,5 @@ TERASOLUNAガイドラインのTODO部分
 * REST API仕様書の自動生成
   - swagger
   - Spring REST Doc ?
-
 
 
